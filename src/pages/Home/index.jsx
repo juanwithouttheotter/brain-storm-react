@@ -1,12 +1,12 @@
 import React, {useState, useEffect} from "react";
 
-function NewLesson() {
+function Home() {
 
     return (
         <div>
-            NewLesson
+            Home
         </div>
     );
 }
 
-export default NewLesson;
+export default Home;
