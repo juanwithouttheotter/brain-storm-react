@@ -1,16 +1,25 @@
 import React from "react";
-import NavLink from "../NavLink";
 
-function Nav() {
+import Nav from 'react-bootstrap/Nav'
+
+function Navbar(props) {
     return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-primary">
-        <NavLink href="/" name="Home" />
-        <NavLink href="/newlesson" name="New Lesson" />
-        <NavLink href="/curriculumoverview" name="Curriculum Overview" />
-        <NavLink href="/profile" name="Profile" />
-    </nav>
+        <Nav variant="tabs" classname="justify-content-end" defaultActiveKey={props.location} >
+            <Nav.Item>
+                <Nav.Link href="/" eventKey="/">Home</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link href="/newlesson"  eventKey="newlesson">New Lesson</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link href="/curriculumoverview" eventKey="curriculumoverview">Curriculum Overview</Nav.Link>
+            </Nav.Item>
+            <Nav.Item>
+                <Nav.Link href="/profile" eventKey="profile">Profile</Nav.Link>
+            </Nav.Item>
+        </Nav>
 
     );
 }
 
-export default Nav;
+export default Navbar;

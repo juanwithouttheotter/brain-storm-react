@@ -1,10 +1,11 @@
 import React from "react";
+import Nav from 'react-bootstrap/Nav'
 
-function NavLink({href, name}) {
+function NavLink({href, name, ekey}) {
     return (
-        <a className="navbar-brand" href={href}>
+        <Nav.Link className="navbar-brand" href={href} eventKey={ekey}>
             {name}
-        </a>
+        </Nav.Link>
     );
 }
 

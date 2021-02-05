@@ -10,12 +10,12 @@ import NewLesson from "./pages/NewLesson";
 import CurriculumOverview from "./pages/CurriculumOverview";
 import UserProfile from "./pages/UserProfile";
 import Home from "./pages/Home";
-import Nav from "./components/Nav";
+import Navbar from "./components/Nav";
 
 function App() {
   return (
     <div>
-      <Nav></Nav>
+      <Navbar></Navbar>
       <Router>
         <Switch>
           <Route path="/" exact={true} component={Home} />
