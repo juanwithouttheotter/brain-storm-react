@@ -4,7 +4,7 @@ import Nav from 'react-bootstrap/Nav'
 
 function Navbar(props) {
     return (
-        <Nav variant="tabs" classname="justify-content-end" defaultActiveKey={props.location} >
+        <Nav variant="tabs" className="justify-content-end" defaultActiveKey={props.location} >
             <Nav.Item>
                 <Nav.Link href="/" eventKey="/">Home</Nav.Link>
             </Nav.Item>

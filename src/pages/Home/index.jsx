@@ -10,6 +10,7 @@ function Home() {
         return await fetch("https://api.thecatapi.com/v1/breeds")
         .then(res => res.json())
         .then(data => {
+            console.log(data[0]);
             setLessonList(data);
             setLessonListDefault(data);
         });
@@ -17,8 +18,10 @@ function Home() {
 
     const updateInput = async (input) => {
          const filtered = lessonListDefault.filter(lesson => {
+            console.log(lesson);
              return lesson.name.toLowerCase().includes(input.toLowerCase())
          })
+         
          setInput(input);
          setLessonList(filtered);
     }
